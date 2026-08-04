@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Itens</title>
+<link rel="stylesheet" href="cadI.css">
+</head>
+<body>
+
+<div class="layout">
+
+<aside class="sidebar">
+
+<h2>Almox</h2>
+
+<div class="menu-group">
+<span class="menu-title">OPERAÇÃO</span>
+<ul>
+<li>Controle de Estoque</li>
+<li>Movimentação de Ferramentas</li>
+</ul>
+</div>
+
+<div class="menu-group">
+<span class="menu-title">ADMINISTRAÇÃO</span>
+<ul>
+<li>Cadastro de Usuários</li>
+<li>Cadastro de Ferramentas</li>
+<li class="ativo">Cadastro de Itens</li>
+</ul>
+</div>
+
+</aside>
+
+
+
+<main class="content">
+
+<header class="topbar">
+<h1>Cadastro e Reposição de Itens</h1>
+</header>
+
+
+<section class="summary-box">
+
+<div class="summary-item">
+<h3>1240</h3>
+<span>Itens em Estoque</span>
+</div>
+
+<div class="summary-item">
+<h3>18</h3>
+<span>Itens Críticos</span>
+</div>
+
+</section>
+
+
+
+<section class="form-box">
+
+<h2>Registrar Item ou Reposição</h2>
+
+<form>
+
+<div class="tipo-box">
+
+<label class="radio-box">
+<input type="radio" checked>
+Novo Item
+</label>
+
+<label class="radio-box">
+<input type="radio">
+Reposição
+</label>
+
+</div>
+
+
+
+<div class="grid">
+
+<div>
+<label>Código do Item</label>
+<input type="text" placeholder="Ex: PAR-M10-30">
+</div>
+
+<div>
+<label>Descrição</label>
+<input type="text" placeholder="Parafuso M10 x 30">
+</div>
+
+<div>
+<label>Categoria</label>
+<select>
+<option>Selecione</option>
+<option>Fixadores</option>
+<option>Rolamentos</option>
+<option>Lubrificantes</option>
+</select>
+</div>
+
+<div>
+<label>Quantidade Recebida</label>
+<input type="number" placeholder="Ex: 150">
+</div>
+
+<div>
+<label>Estoque Mínimo</label>
+<input type="number" placeholder="Ex: 20">
+</div>
+
+<div>
+<label>Localização</label>
+<input type="text" placeholder="Prateleira A2">
+</div>
+
+</div>
+
+
+
+<div class="actions">
+
+<button class="secondary" type="button">
+Cancelar
+</button>
+
+<button type="submit">
+Registrar Item
+</button>
+
+</div>
+
+</form>
+
+</section>
+
+</main>
+
+</div>
+
+</body>
+</html>

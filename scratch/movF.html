@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movimentação de Ferramentas</title>
+<link rel="stylesheet" href="movF.css">
+</head>
+<body>
+
+<div class="layout">
+
+<aside class="sidebar">
+
+<h2>Almox</h2>
+
+<div class="menu-group">
+<span class="menu-title">OPERAÇÃO</span>
+<ul>
+<li>Controle de Estoque</li>
+<li class="ativo">Movimentação de Ferramentas</li>
+</ul>
+</div>
+
+<div class="menu-group">
+<span class="menu-title">ADMINISTRAÇÃO</span>
+<ul>
+<li>Cadastro de Usuários</li>
+<li>Cadastro de Ferramentas</li>
+<li>Cadastro de Itens</li>
+</ul>
+</div>
+
+</aside>
+
+
+
+<main class="content">
+
+<header class="topbar">
+<h1>Movimentação de Ferramentas</h1>
+</header>
+
+
+<section class="module-tabs">
+<button class="tab-active">Empréstimos</button>
+<button>Devoluções</button>
+<button>Histórico</button>
+</section>
+
+
+
+<section class="summary-box">
+
+<div class="summary-item">
+<h3>12</h3>
+<span>Ferramentas em Uso</span>
+</div>
+
+<div class="summary-item">
+<h3>3</h3>
+<span>Devoluções Pendentes</span>
+</div>
+
+</section>
+
+
+
+<section class="form-box">
+
+<h2>Retirada de Ferramentas</h2>
+
+<p class="helper-text">
+Escaneie crachá e ferramenta ou preencha manualmente.
+</p>
+
+<form>
+
+<div class="grid">
+
+<div>
+<label>Identificação do Funcionário</label>
+
+<div class="scan-field">
+<input type="text" placeholder="Bip o crachá ou digite ID">
+<span class="scan-icon">🪪</span>
+</div>
+
+</div>
+
+
+<div>
+<label>Nome Identificado</label>
+<input type="text" value="Preenchimento automático" readonly>
+</div>
+
+
+<div>
+<label>Código da Ferramenta</label>
+
+<div class="scan-field">
+<input type="text" placeholder="Bip código ou digite patrimônio">
+<span class="scan-icon">▥</span>
+</div>
+
+</div>
+
+
+<div>
+<label>Ferramenta Detectada</label>
+<input type="text" value="Preenchimento automático" readonly>
+</div>
+
+
+<div>
+<label>Data Retirada</label>
+<input type="date" value="2026-04-28">
+</div>
+
+
+<div>
+<label>Previsão Devolução</label>
+<input type="date">
+</div>
+
+</div>
+
+
+
+<div class="actions">
+
+<button type="button" class="secondary">
+Cancelar
+</button>
+
+<button type="submit">
+Registrar Saída
+</button>
+
+</div>
+
+</form>
+
+</section>
+
+</main>
+
+</div>
+
+</body>
+</html>

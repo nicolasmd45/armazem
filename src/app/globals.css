@@ -1,0 +1,84 @@
+:root {
+        --background: var(--lightPrimary);
+        --foreground: var(--lightPrimary);
+
+        --lightPrimary: hsl(0, 0%, 95%);     
+        --lightSecondary: hsl(0, 0, 85%);
+        --lightTertiary: hsl(0, 0, 75%);
+        --enlightened: hsla(0, 0%, 90%, 0.05);
+
+        --darkPrimary: hsl(0, 0%, 5%);
+        --darkSecondary: hsl(0, 0%, 15%);
+        --darkTertiary: hsl(0, 0%, 25%);
+
+        --themePrimary: hsl(210, 100%, 50%);
+        --themeSecondary: hsl(210, 100%, 40%);
+        --themeTertiary: hsl(210, 100%, 25%);
+        --themeGreen: hsl(120, 100%, 25%);
+        --themeRed: hsl(0, 100%, 30%);
+
+
+        --gradient-blue-up: linear-gradient(135deg, var(--themePrimary), var(--themeTertiary));
+        --gradient-blue-down: linear-gradient(45deg, var(--themePrimary), var(--themeTertiary));
+        --gradient-blue-left: linear-gradient(225deg, var(--themePrimary), var(--themeTertiary));
+        --gradient-blue-right: linear-gradient(315deg, var(--themePrimary), var(--themeTertiary));
+
+        --primary: var(--lightPrimary);
+        --secondary: var(--lightSecondary);
+        --tertiary: var(--lightTertiary);
+}
+/*
+@media (prefers-color-scheme: dark) {
+        :root {
+                --primary: var(--darkPrimary);
+                --secondary: var(--darkSecondary);
+                --tertiary: var(--darkTertiary);
+        }
+}
+*/
+html,
+body {
+        height: 100%;
+        width: 100%; 
+
+}
+
+body {
+        min-height: 100%;
+        display: flex;
+        flex-direction: row;
+        color: var(--foreground);
+        background: var(--background);
+        font-family: Arial, Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+        color: inherit;
+        text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+        html {
+                color-scheme: dark;
+        }
+}
+
+.content {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 20rem);
+        height: 100%;
+        align-items: left;
+        padding: 2rem;
+        background: var(--secondary);
+}

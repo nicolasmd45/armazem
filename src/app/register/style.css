@@ -1,0 +1,106 @@
+.registerTool > h1, .registerItem > h1 {
+        color: var(--themeTertiary);
+        text-align: left;
+        padding: 0 0 2rem 0;
+}
+
+.registerTool > h3, .registerItem > h3 {
+        font-weight: 75;
+        font-size: 1rem;
+}
+
+.secondaryChart > h2 {
+        color: var(--themeTertiary);
+        font-weight: bold;
+        font-size: 1.5rem;
+}
+
+.secondaryChart {
+        padding: 2rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        background: var(--primary);
+        box-shadow: 0 0 2rem var(--tertiary);
+}
+
+.formContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+}
+
+.inputContainer {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 0 1rem 0 1rem;
+}
+
+input,
+select {
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        background: var(--secondary);
+        color: var(--darkPrimary);
+        font-size: 1rem;
+}
+
+form {
+        display: flex;
+        width: 100%;
+        height: 100%;
+}
+
+.submitContainer > button {
+        transition: 0.1s;
+        border: none;
+        border-radius: 0.5rem;
+        height: 2.5rem;
+        width: 5rem;
+        margin-left: 1rem;
+        color: var(--primary);
+        font-size: 1rem;
+}
+
+.submitContainer > button:hover {
+        transition: 0.1s;
+        filter: brightness(1.2);
+        color: var(--secondary);
+        cursor: pointer;
+        padding: 0 0 0.2rem 0.2rem;
+        box-shadow: 1px 1px .5rem var(--themeTertiary);
+}
+
+.submitContainer > button:active {
+        transition: 0.01s;
+        filter: brightness(0.8);
+        color: var(--primary);
+        cursor: pointer;
+        padding: .1rem  .1rem 0 0;
+        box-shadow: 1px 1px .5rem var(--themeTertiary);
+}
+
+.resetButton{
+        background: var(--themeRed);
+        color: var(--primary);
+}
+
+.submitButton{
+        background: var(--themeGreen);
+        color: var(--primary);
+}
+
+.submitContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: right;
+        padding: 2rem 1rem 0 0;
+}
