@@ -2,7 +2,7 @@
         --background: var(--lightPrimary);
         --foreground: var(--lightPrimary);
 
-        --lightPrimary: hsl(0, 0%, 95%);     
+        --lightPrimary: hsl(0, 0%, 95%);
         --lightSecondary: hsl(0, 0, 85%);
         --lightTertiary: hsl(0, 0, 75%);
         --enlightened: hsla(0, 0%, 90%, 0.05);
@@ -17,15 +17,42 @@
         --themeGreen: hsl(120, 100%, 25%);
         --themeRed: hsl(0, 100%, 30%);
 
-
-        --gradient-blue-up: linear-gradient(135deg, var(--themePrimary), var(--themeTertiary));
-        --gradient-blue-down: linear-gradient(45deg, var(--themePrimary), var(--themeTertiary));
-        --gradient-blue-left: linear-gradient(225deg, var(--themePrimary), var(--themeTertiary));
-        --gradient-blue-right: linear-gradient(315deg, var(--themePrimary), var(--themeTertiary));
+        --gradient-blue-up: linear-gradient(
+                135deg,
+                var(--themePrimary),
+                var(--themeTertiary)
+        );
+        --gradient-blue-down: linear-gradient(
+                45deg,
+                var(--themePrimary),
+                var(--themeTertiary)
+        );
+        --gradient-blue-left: linear-gradient(
+                225deg,
+                var(--themePrimary),
+                var(--themeTertiary)
+        );
+        --gradient-blue-right: linear-gradient(
+                315deg,
+                var(--themePrimary),
+                var(--themeTertiary)
+        );
 
         --primary: var(--lightPrimary);
         --secondary: var(--lightSecondary);
         --tertiary: var(--lightTertiary);
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+        }
+
+        /* Firefox */
+        input[type="number"] {
+                -moz-appearance: textfield;
+                appearance: textfield; /* Standard property */
+        }
 }
 /*
 @media (prefers-color-scheme: dark) {
@@ -39,8 +66,8 @@
 html,
 body {
         height: 100%;
-        width: 100%; 
-
+        width: 100%;
+        overflow: hidden;
 }
 
 body {

@@ -34,6 +34,7 @@ export default function RegisterTool() {
                                                                         id="toolName"
                                                                 />
                                                         </div>
+
                                                         <div className="inputContainer">
                                                                 <label htmlFor="patrimonialCode">
                                                                         Código
@@ -46,14 +47,14 @@ export default function RegisterTool() {
                                                                         id="patrimonialCode"
                                                                 />
                                                         </div>
+
                                                         <div className="inputContainer">
                                                                 <label htmlFor="category">
                                                                         Categoria
                                                                 </label>
                                                                 <select
                                                                         name="category"
-                                                                        id="category"
-                                                                >
+                                                                        id="category">
                                                                         <option value="0">
                                                                                 Selecione
                                                                                 uma
@@ -70,6 +71,7 @@ export default function RegisterTool() {
                                                                         </option>
                                                                 </select>
                                                         </div>
+
                                                         <div className="inputContainer">
                                                                 <label htmlFor="localization">
                                                                         Localização
@@ -85,14 +87,13 @@ export default function RegisterTool() {
                                                         <div className="submitContainer">
                                                                 <button
                                                                         type="reset"
-                                                                        className="resetButton"
-                                                                >
+                                                                        className="resetButton">
                                                                         Limpar
                                                                 </button>
+
                                                                 <button
                                                                         type="submit"
-                                                                        className="submitButton"
-                                                                >
+                                                                        className="submitButton">
                                                                         Cadastrar
                                                                 </button>
                                                         </div>

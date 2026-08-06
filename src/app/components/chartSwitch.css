@@ -1,0 +1,46 @@
+@keyframes hide{
+        0%{
+                width: 100%;
+                opacity: 100%;
+        }
+        75%{
+                opacity: 0%;
+
+        }
+        100%{
+                width: 0px;
+                opacity: 0%;
+        }
+}
+
+@keyframes show{
+        0%{
+                width:0px;
+                opacity: 0%;
+        }
+        25%{
+                opacity: 100%;
+
+        }
+        100%{
+                width: 100%;
+                opacity: 100%;
+        }
+}
+
+.chartSwitch{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 25rem;
+}
+
+.hidden{
+        flex-wrap: nowrap;
+        text-overflow: clip;
+        animation: hide 1s forwards;
+}
+
+.shown{
+        animation: show 1s forwards;
+}

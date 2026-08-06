@@ -1,0 +1,21 @@
+import "./chartSwitch.css";
+import { ReactNode } from "react";
+import { useState } from "react";
+
+interface switchProps {
+        chartLeftContent: ReactNode;
+        chartRightContent: ReactNode;
+        chartCurrent: string;
+}
+
+export default function ChartSwitch({ chartLeftContent, chartRightContent, chartCurrent}: switchProps) {
+
+        
+
+        return (
+                <div className="chartSwitch">
+                        <div className={`chartLeft ${chartCurrent === "left" ? "shown" : "hidden"}` }>{chartLeftContent}</div>
+                        <div className={`chartRight ${chartCurrent === "right" ? "shown" : "hidden"}` }>{chartRightContent}</div>
+                </div>
+        );
+}
