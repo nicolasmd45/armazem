@@ -16,13 +16,50 @@
         font-size: 1.5rem;
 }
 
+.registerItem, .registerTool{
+        max-height: 100%;
+}
+
+.radioContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        margin: 0 1rem 1rem 0;
+}
+
+.radioButton{
+        cursor: pointer;
+        width: 20%;
+        max-width: 15rem;
+        display: flex;
+        height: 5rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--secondary);
+        margin: 0 1rem 1rem 0;
+        border-radius: 1rem;
+        padding: 2rem 2rem 2rem 1.5rem;
+}
+
+.radioButton > input{
+        margin-bottom: 7px;
+}
+
+.radioButton > span{
+        font-weight: 700;
+}
+
 .secondaryChart {
+        overflow-x: hidden;
         padding: 2rem;
         margin-top: 2rem;
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: auto;
+        max-height: 80%;
         border-radius: 1rem;
         background: var(--primary);
         box-shadow: 0 0 2rem var(--tertiary);
@@ -33,13 +70,14 @@
         flex-direction: row;
         width: 100%;
         flex-wrap: wrap;
+        height: 100%;
 }
 
 .inputContainer {
         display: flex;
         flex-direction: column;
         width: 50%;
-        padding: 0 1rem 0 1rem;
+        padding: 0 1rem 0 0;
 }
 
 input,
@@ -62,7 +100,6 @@ label{
 form {
         display: flex;
         width: 100%;
-        height: 100%;
 }
 
 .submitContainer > button {
@@ -110,9 +147,4 @@ form {
         width: 100%;
         justify-content: right;
         padding: 2rem 1rem 0 0;
-}
-/*
-.chartSwitchItem{
-        width: 100%;
-        display: flex;
 }

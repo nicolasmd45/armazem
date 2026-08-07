@@ -30,7 +30,7 @@ export default function Sidebar() {
                                 <h3>ADMINISTRAÇÃO</h3>
                                 <div className="buttonContainer">
                                         <div
-                                                className={`sideBarButton ${pathname === "/register/user" ? "selected" : ""}`}
+                                                className={`sideBarButton ${pathname === "/manage/user" ? "selected" : ""}`}
                                                 data-name="userManagement"
                                         >
                                                 <span>
@@ -38,10 +38,10 @@ export default function Sidebar() {
                                                 </span>
                                         </div>
                                         <div
-                                                className={`sideBarButton ${pathname === "/register/tool" ? "selected" : ""}`}
+                                                className={`sideBarButton ${pathname === "/manage/tool" ? "selected" : ""}`}
                                                 data-name="registerTool"
                                                 onClick={() => {
-                                                        window.location.href = "/register/tool";
+                                                        window.location.href = "/manage/tool";
                                                 }}
                                         >
                                                 <span>
@@ -49,10 +49,10 @@ export default function Sidebar() {
                                                 </span>
                                         </div>
                                         <div
-                                                className={`sideBarButton ${pathname === "/register/item" ? "selected" : ""}`}
+                                                className={`sideBarButton ${pathname === "/manage/item" ? "selected" : ""}`}
                                                 data-name="registerItem"
                                                 onClick={() => {
-                                                        window.location.href = "/register/item";
+                                                        window.location.href = "/manage/item";
                                                 }}
                                         >
                                                 <span>Cadastro de Itens</span>
