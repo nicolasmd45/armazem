@@ -34,7 +34,7 @@ export default function Sidebar() {
                                                 data-name="userManagement"
                                         >
                                                 <span>
-                                                        Cadastro de Usuários
+                                                        Usuários
                                                 </span>
                                         </div>
                                         <div
@@ -45,7 +45,7 @@ export default function Sidebar() {
                                                 }}
                                         >
                                                 <span>
-                                                        Cadastro de Ferramentas
+                                                        Ferramentas
                                                 </span>
                                         </div>
                                         <div
@@ -55,7 +55,7 @@ export default function Sidebar() {
                                                         window.location.href = "/manage/item";
                                                 }}
                                         >
-                                                <span>Cadastro de Itens</span>
+                                                <span>Itens</span>
                                         </div>
                                 </div>
                         </div>

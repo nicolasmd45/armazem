@@ -1,5 +1,5 @@
 import "./chartSwitch.css";
-import "@/app/animations/show-hide.css";
+import "@/app/transitions/show-hide.css";
 
 import { ReactNode } from "react";
 

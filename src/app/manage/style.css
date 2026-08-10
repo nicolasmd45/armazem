@@ -14,6 +14,8 @@
         color: var(--themeTertiary);
         font-weight: bold;
         font-size: 1.5rem;
+        width: 100%;
+        height: 1.5rem;
 }
 
 .registerItem, .registerTool{
@@ -53,13 +55,11 @@
 }
 
 .secondaryChart {
-        overflow-x: hidden;
-        padding: 2rem 0 2rem 2rem;
+        padding: 2rem;
         margin-top: 2rem;
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-height: 80%;
         border-radius: 1rem;
         background: var(--primary);
         box-shadow: 0 0 2rem var(--tertiary);
@@ -71,14 +71,15 @@
         width: 100%;
         flex-wrap: wrap;
         height: 100%;
-        max-height: 14.4rem;
+        justify-content: space-between;
 }
 
 .inputContainer {
         display: flex;
         flex-direction: column;
-        width: 50%;
-        padding: 0 1rem 0 0;
+        width: 49%;
+        max-height: 5rem;
+        border: 2px solid transparent;
 }
 
 input,
@@ -90,12 +91,14 @@ select{
         background: var(--secondary);
         color: var(--darkPrimary);
         font-size: 1rem;
+        max-height: 2.5rem;
 }
 
 label{
         color: var(--darkTertiary);
         margin-top: 1rem;
-        font-weight: 500;
+        font-weight: lighter;
+        max-height: 1rem;
 }
 
 form {
@@ -147,5 +150,5 @@ form {
         flex-direction: row;
         width: 100%;
         justify-content: right;
-        padding: 2rem 1rem 0 0;
+        margin: 2rem 0 0 0;
 }

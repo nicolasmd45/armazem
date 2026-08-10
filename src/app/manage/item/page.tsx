@@ -1,6 +1,6 @@
 "use client";
 import "../style.css";
-import "@/app/animations/show-hide.css";
+import "@/app/transitions/show-hide.css";
 
 import Chart from "@/app/components/chart";
 import ChartSwitch from "@/app/components/chartSwitch";
