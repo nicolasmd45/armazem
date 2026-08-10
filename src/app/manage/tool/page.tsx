@@ -1,5 +1,7 @@
 "use client";
 import "../style.css";
+import "@/app/animations/show-hide.css";
+
 import Chart from "../../components/chart";
 
 export default function RegisterTool() {
@@ -20,8 +22,8 @@ export default function RegisterTool() {
                                 />
                                 <div className="secondaryChart">
                                         <h2>Cadastrar nova ferramenta</h2>
-                                        <form>
-                                                <div className="formContainer">
+                                        <form id="toolForm">
+                                                <div className="formContainer shown">
                                                         <div className="inputContainer">
                                                                 <label htmlFor="toolName">
                                                                         Nome da
@@ -83,22 +85,23 @@ export default function RegisterTool() {
                                                                         id="localization"
                                                                 />
                                                         </div>
-
-                                                        <div className="submitContainer">
-                                                                <button
-                                                                        type="reset"
-                                                                        className="resetButton">
-                                                                        Limpar
-                                                                </button>
-
-                                                                <button
-                                                                        type="submit"
-                                                                        className="submitButton">
-                                                                        Cadastrar
-                                                                </button>
-                                                        </div>
                                                 </div>
                                         </form>
+                                        <div className="submitContainer">
+                                                <button
+                                                        form="toolForm"
+                                                        type="reset"
+                                                        className="resetButton">
+                                                        Limpar
+                                                </button>
+
+                                                <button
+                                                        form="toolForm"
+                                                        type="submit"
+                                                        className="submitButton">
+                                                        Cadastrar
+                                                </button>
+                                        </div>
                                 </div>
                         </div>
                 </>

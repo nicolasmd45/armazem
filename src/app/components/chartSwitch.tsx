@@ -1,6 +1,7 @@
 import "./chartSwitch.css";
+import "@/app/animations/show-hide.css";
+
 import { ReactNode } from "react";
-import { useState } from "react";
 
 interface switchProps {
         chartLeftContent: ReactNode;
@@ -8,14 +9,21 @@ interface switchProps {
         chartCurrent: string;
 }
 
-export default function ChartSwitch({ chartLeftContent, chartRightContent, chartCurrent}: switchProps) {
-
-        
-
+export default function ChartSwitch({
+        chartLeftContent,
+        chartRightContent,
+        chartCurrent,
+}: switchProps) {
         return (
                 <div className="chartSwitch">
-                        <div className={`chartLeft ${chartCurrent === "left" ? "shown" : "hidden"}` }>{chartLeftContent}</div>
-                        <div className={`chartRight ${chartCurrent === "right" ? "shown" : "hidden"}` }>{chartRightContent}</div>
+                        <div
+                                className={`chartLeft ${chartCurrent === "left" ? "shown" : "hidden"}`}>
+                                {chartLeftContent}
+                        </div>
+                        <div
+                                className={`chartRight ${chartCurrent === "right" ? "shown" : "hidden"}`}>
+                                {chartRightContent}
+                        </div>
                 </div>
         );
 }

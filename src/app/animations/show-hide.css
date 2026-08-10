@@ -1,0 +1,40 @@
+@keyframes hide {
+        0% {
+                width: 100%;
+                opacity: 1;
+        }
+
+        75% {
+                opacity: 0;
+        }
+
+        100% {
+                width: 0;
+                opacity: 0;
+                height: 0;
+        }
+}
+
+@keyframes show {
+        0% {
+                width: 0;
+                opacity: 0;
+        }
+
+        75% {
+                opacity: 1;
+        }
+
+        100% {
+                width: 100%;
+                opacity: 1;
+        }
+}
+
+.hidden {
+        animation: hide 0.75s forwards;
+}
+
+.shown {
+        animation: show 0.75s forwards;
+}

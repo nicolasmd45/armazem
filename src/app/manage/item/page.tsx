@@ -1,10 +1,13 @@
 "use client";
 import "../style.css";
+import "@/app/animations/show-hide.css";
+
 import Chart from "@/app/components/chart";
 import ChartSwitch from "@/app/components/chartSwitch";
-import { useState } from "react";
 import RegisterItem from "./register/page";
 import RestockItem from "./restock/page";
+
+import { useState } from "react";
 
 export default function ManageItem() {
         let item: number = 0; //puxar do banco dps
@@ -81,14 +84,24 @@ export default function ManageItem() {
                                         />
                                         <div className="submitContainer">
                                                 <button
-                                                        form={currentChart === "left" ? "leftItemForm" : "rightItemForm"}
+                                                        form={
+                                                                currentChart ===
+                                                                "left"
+                                                                        ? "leftItemForm"
+                                                                        : "rightItemForm"
+                                                        }
                                                         type="reset"
                                                         className="resetButton">
                                                         Limpar
                                                 </button>
 
                                                 <button
-                                                        form={currentChart === "left" ? "leftItemForm" : "rightItemForm"}
+                                                        form={
+                                                                currentChart ===
+                                                                "left"
+                                                                        ? "leftItemForm"
+                                                                        : "rightItemForm"
+                                                        }
                                                         type="submit"
                                                         className="submitButton">
                                                         Cadastrar

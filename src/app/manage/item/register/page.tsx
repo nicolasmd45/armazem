@@ -2,7 +2,7 @@
 import "../../style.css";
 
 export default function RegisterItem() {
-        const itemCategory = ["fixadores", "lubrificantes", "rolamentos"]
+        const itemCategory = ["fixadores", "lubrificantes", "rolamentos"]; //puxar do banco dps
         return (
                 <>
                         <h2>Adicionar item</h2>
@@ -45,11 +45,25 @@ export default function RegisterItem() {
                                                                 Selecione uma
                                                                 categoria
                                                         </option>
-                                                        {itemCategory.map((category, index) => (
-                                                                <option key={category+index} value = {category}>
-                                                                        {category}
-                                                                </option>
-                                                        ))}
+                                                        {itemCategory.map(
+                                                                (
+                                                                        category,
+                                                                        index,
+                                                                ) => (
+                                                                        <option
+                                                                                key={
+                                                                                        category +
+                                                                                        index
+                                                                                }
+                                                                                value={
+                                                                                        category
+                                                                                }>
+                                                                                {
+                                                                                        category
+                                                                                }
+                                                                        </option>
+                                                                ),
+                                                        )}
                                                 </select>
                                         </div>
 
